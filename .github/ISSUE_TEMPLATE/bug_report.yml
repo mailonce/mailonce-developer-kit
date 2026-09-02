@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a reproducible problem with the developer kit or MailOnce testing workflow
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a reproducible problem. Please avoid posting inbox tokens, credentials, private message contents, or other secrets.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version, framework/test runner, and relevant package versions.
+      placeholder: Windows 11, Node 24, Playwright 1.x
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs or screenshots are welcome after removing secrets and personal data.
