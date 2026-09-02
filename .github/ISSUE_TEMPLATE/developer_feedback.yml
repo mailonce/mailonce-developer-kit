@@ -1,0 +1,44 @@
+name: Developer workflow feedback
+description: Tell us how you use temporary inboxes in development or QA
+title: "[Workflow]: "
+labels: []
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you testing?
+      description: Describe the end-to-end flow, for example signup verification, OTP, passwordless login, or verification links.
+    validations:
+      required: true
+  - type: input
+    id: stack
+    attributes:
+      label: Stack
+      description: Language, framework, test runner, or automation tool.
+      placeholder: TypeScript, Next.js, Playwright
+  - type: textarea
+    id: manual
+    attributes:
+      label: What do you do manually today?
+      description: Which steps slow the workflow down or make it unreliable?
+  - type: textarea
+    id: automation
+    attributes:
+      label: What would you automate first?
+      description: Describe the smallest API, webhook, SDK, or helper that would remove real work.
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Most useful future integration
+      options:
+        - REST API
+        - Webhooks
+        - JavaScript / TypeScript SDK
+        - Python SDK
+        - CLI
+        - Other
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Include expected test volume or constraints if they matter.
