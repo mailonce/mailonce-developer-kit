@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Try MailOnce
+    url: https://mailonce.org
+    about: Open the hosted MailOnce service.
+  - name: Security issue
+    url: mailto:support@mailonce.org
+    about: Please report suspected security vulnerabilities privately instead of opening a public issue.
